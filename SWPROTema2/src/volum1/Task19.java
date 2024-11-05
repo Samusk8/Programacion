@@ -21,3 +21,4 @@ public class Task19 {
 //* La diferencia es que con continue saltamos el valor que esta
 //* en la condicion especificada y continuamos, En cambio, en el break
 //* cuando se cumpla esa condicion, el codigo se rompe y sale y pasa a lo siguiente
+// d
