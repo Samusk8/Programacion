@@ -52,4 +52,43 @@ public class OrdenacionBusqueda {
         }
         return ordenar;
     }
+    public static int busquedaBinaria(int[] a, int buscar){
+        int primero = 0;
+        int ultimo = a.length - 1;
+        int mitad = -1;
+        while (primero <= ultimo){
+            mitad = (primero + ultimo) / 2;
+            if (buscar == a[mitad]) {
+                return mitad;
+            } else if (a[mitad] > buscar) {
+                ultimo = mitad -1;
+            } else {
+                primero = mitad +1;
+            }
+        }
+        return -1;
+    }
+    public static int busquedaBinaria2(int[] a, int buscar){
+        int primero = 0;
+        int ultimo = a.length - 1;
+        int mitad = -1;
+        int contador = 0;
+        while (primero <= ultimo){
+            contador++;
+            mitad = (primero + ultimo) / 2;
+            if (buscar == a[mitad]) {
+                System.out.println();
+                System.out.println("Comparaciones realizadas: " + contador);
+                return mitad;
+            } else if (a[mitad] > buscar) {
+                ultimo = mitad -1;
+            } else {
+                primero = mitad +1;
+            }
+        }
+        System.out.println();
+        System.out.println("Comparaciones realizadas: " + contador);
+        return -1;
+    }
+
 }
