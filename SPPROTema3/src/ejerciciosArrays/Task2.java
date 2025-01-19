@@ -12,7 +12,7 @@ public class Task2 {
     }
 
     public static void main(String[] args) {
-        int[] array = new int[5];
+        int[] array = new int[6];
         int resultado = sumaValores(array);
         System.out.println(resultado);
 
